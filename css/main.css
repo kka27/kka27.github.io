@@ -1,20 +1,52 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
-body {
-  font-family: sans-serif;
-  padding: 2rem;
+:root {
+  /* Font size maintenance */
+  --fs-xl: 9rem;
+  --fs-600: 7rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+
+  /* Colour variables */
+  --bg-grey: #F7F3F0;
+  --warm-orange: #F54029;
+  --washed-black: #111111;
+  --bright-white: #FFFFFF;
 }
 
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
+@media (max-width: 1024px) {
+  :root {
+    --fs-xl: 2.75rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --fs-xl: 2rem;
+    --fs-600: 1.45rem;
+  }
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin-inline: 20px;
+  padding: 0;
+}
+
+/* 
+  STYLE GUIDE SECTIONS -------------------
+*/
+section {
+  margin-bottom: 6rem;
+}
+
+section h2 {
+  margin-bottom: 2rem;
 }
 
 section h3 {
-  margin-bottom: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 section p {
@@ -26,36 +58,122 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+.elem-section {
+  border-top: solid var(--washed-black);
+}
+
+.content-wrapper {
+  margin-left: 6rem;
+}
+
+#dot {
+  color: var(--warm-orange);
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+h1, h2, h3, h4 {
+  color: var(--washed-black);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  line-height: calc(var(--fs-xl) * 0.9);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  ;
+}
+
+h2 {
+  font-size: var(--fs-600);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--fs-500);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: var(--fs-700);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--fs-400);
+  font-weight: 400;
+  max-width: 35vw;
+}
+
+/* Changing bullet colour from:  https://www.w3.org/Style/Examples/007/color-bullets.en.html*/
+ul, ol {
+  list-style: none;
+  font-family: 'Roboto Mono';
+  color: var(--washed-black);
+}
+
+li::before {
+  content: "•";
+  color: var(--warm-orange);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+ol li {
+  counter-increment: li
+}
+
+ol li::before {
+  content: counter(li);
+  color: var(--warm-orange);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
-.button-nav {
+.nav-button {
   display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  border-radius: 0.25em;
+  padding: 0.5em 1.5em;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--washed-black);
+  border-radius: 5em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
+
+  font-family: 'Roboto Mono', 'monospace';
+  color: var(--washed-black);
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #999;
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--warm-orange);
+  color: var(--bright-white)
 }
 
+/* Styling for the in-text link*/
+.in-text-link {
+  /* Link animation from: https://codepen.io/team/css-tricks/pen/gOXMLLY */
+  color: var(--washed-black);
+  box-shadow: inset 0 0 0 0 var(--warm-orange);
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
+}
 
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
+.in-text-link:hover {
+  color: var(--bright-white);
+  box-shadow: inset 200px 0 0 0 var(--warm-orange);
+}

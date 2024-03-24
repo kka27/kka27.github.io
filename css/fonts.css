@@ -1,0 +1,56 @@
+/* HK Grotesk Regular Regular*/
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HK Grotesk Regular Medium */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* HK Grotesk Regular Bold */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* HK Grotesk Regular Italic*/
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* HK Grotesk Regular Italic */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* HK Grotesk Regular Italic */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Roboto Mono Regular Regular */
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
