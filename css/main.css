@@ -4,6 +4,7 @@
   --fs-600: 7rem;
   --fs-500: 1.5rem;
   --fs-400: 1rem;
+  --fs-300: 0.85rem;
 
   /* Colour variables */
   --bg-grey: #F7F3F0;
@@ -29,8 +30,9 @@
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
-  margin-inline: 20px;
+  margin: 0 20px;
   padding: 0;
+  background-color: var(--bg-grey);
 }
 
 /* 
@@ -84,7 +86,6 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 5rem;
-  ;
 }
 
 h2 {
@@ -115,7 +116,7 @@ ul, ol {
   color: var(--washed-black);
 }
 
-li::before {
+.custom-ul li::before {
   content: "•";
   color: var(--warm-orange);
   display: inline-block;
@@ -123,11 +124,11 @@ li::before {
   margin-left: -1em
 }
 
-ol li {
+.custom-ol li {
   counter-increment: li
 }
 
-ol li::before {
+.custom-ol li::before {
   content: counter(li);
   color: var(--warm-orange);
   display: inline-block;
@@ -145,7 +146,7 @@ ol li::before {
 /* Styling for the navigation button */
 .nav-button {
   display: inline-block;
-  padding: 0.5em 1.5em;
+  padding: 0.35em 1.5em;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--washed-black);
   border-radius: 5em;
@@ -154,6 +155,7 @@ ol li::before {
   transition: background-color 0.35s ease-out;
 
   font-family: 'Roboto Mono', 'monospace';
+  font-size: var(--fs-300);
   color: var(--washed-black);
 }
 
@@ -177,3 +179,123 @@ ol li::before {
   color: var(--bright-white);
   box-shadow: inset 200px 0 0 0 var(--warm-orange);
 }
+
+.clickable-img {
+  /* Grey and blur effect from: https://codepen.io/nxworld/pen/ZYNOBZ */
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.clickable-img:hover {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+.example-img {
+  /* Crop and scale images from: https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+  width: 25vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: -20% 0;
+}
+
+/* 
+BRANDING ELEMS
+*/
+
+#colour-palette {
+  border: 1px solid grey;
+  width: 30vw;
+}
+
+/* 
+Nav bar --------------
+*/
+
+/* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  border-bottom: 1px solid var(--washed-black);
+  background-color: var(--bg-grey);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-inline-start: 0.5rem;
+}
+
+nav li:first-child, nav li:nth-child(2) {
+  /* Make logo stay on left side */
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rebeccapurple;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.close-icon {
+  fill: white;
+}
+
+.menu-icon {
+  fill: white;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
