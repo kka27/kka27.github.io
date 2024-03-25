@@ -97,7 +97,7 @@ h2 {
 
 h3 {
   font-size: var(--fs-500);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h4 {
@@ -108,7 +108,7 @@ h4 {
 p {
   font-size: var(--fs-400);
   font-weight: 400;
-  max-width: 35vw;
+  width: clamp(25vw, 35vw, 40vw);
 }
 
 /* Changing bullet colour from:  https://www.w3.org/Style/Examples/007/color-bullets.en.html*/
@@ -263,7 +263,7 @@ nav li:nth-child(2) {
 nav .mono-text {
   position: absolute;
   top: 25px;
-  left: 150px;
+  left: 10rem;
 }
 
 .sidebar {
@@ -378,7 +378,7 @@ main section {
 
 .about-description {
   position: absolute;
-  margin-left: 5rem;
+  margin-left: 10rem;
   top: 580px;
 }
 
@@ -392,4 +392,80 @@ main section {
   text-align: right;
   right: 20px;
   bottom: 10px;
+}
+
+#projects {
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+#projects h2 {
+  margin-bottom: 15rem;
+}
+
+.project2 {
+  position: relative;
+  left: 15vw;
+}
+
+.project2 h3 {
+  position: absolute;
+  z-index: 999;
+  margin: 0;
+  top: -40px;
+  left: -50px;
+}
+
+.project2 img {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  object-position: 0 20%;
+}
+
+.project1 {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+}
+
+.project1 img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 20%;
+}
+
+.project1 h3 {
+  position: absolute;
+  z-index: 999;
+  margin: 0;
+  top: -40px;
+  left: -50px;
+}
+
+#contact {
+  margin: 2rem
+}
+
+#contact {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+#contact h2{
+  margin-bottom: 0;
+  margin-right: 3rem;
+}
+
+.info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  color: #F54029;
+  text-decoration: none;
 }
