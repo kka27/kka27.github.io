@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 -960 960 960" width="26">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+        <li><a class="nav-button" href="portfolio.html">About</a></li>
+        <li><a class="nav-button" href="portfolio.html">Projects</a></li>
+        <li><a class="nav-button" href="portfolio.html">Contact</a></li>
+      </ul>
+      <!-- Close and menu icons from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24 -->
+      <ul class="full-nav">
+        <li><a href="index.html" class="nav-logo"><svg class="logo-button" width="31" height="90" viewBox="0 0 31 90"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 22H13V44H0V22Z" fill="black" />
+              <rect y="46" width="13" height="22" fill="black" />
+              <path
+                d="M31 22C31 24.8891 30.5991 27.7499 29.8201 30.419C29.0412 33.0882 27.8995 35.5135 26.4602 37.5564C25.0208 39.5992 23.3121 41.2197 21.4316 42.3254C19.551 43.431 17.5355 44 15.5 44L15.5 22H31Z"
+                fill="black" />
+              <path
+                d="M31 68C31 65.1109 30.5991 62.2501 29.8201 59.581C29.0412 56.9118 27.8995 54.4865 26.4602 52.4436C25.0208 50.4008 23.3121 48.7803 21.4316 47.6746C19.551 46.569 17.5355 46 15.5 46L15.5 68H31Z"
+                fill="black" />
+            </svg>
+          </a></li>
+        <li>
+          <p class="mono-text">Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
+        </li>
+        <li><a class="nav-button" href="portfolio.html">About</a></li>
+        <li><a class="nav-button" href="portfolio.html">Projects</a></li>
+        <li><a class="nav-button" href="portfolio.html">Contact</a></li>
+
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-icon"
+              xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+
+    <!-- Responsive navbar from: https://www.youtube.com/watch?v=U8smiWQ8Seg&t=386s -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none';
+      }
+    </script>
+  </header>
+
+  <main>
+    <section id="about-me">
+      <div class="hero-wrapper">
+        <div class="hero-title">
+          <h1 class="line first">Kelvin Kwan</h1>
+          <h1 class="line second">UX Designer</h1>
+          <h1 class="line third">Web Dev</h1>
+          <div class="dot-decor">&</div>
+        </div>
+        <div class="about-description">
+          <p>Hello! I’m Kelvin, a multidisciplinary designer and student with a strong background in computer science.
+            Continuous learning and self-reflection is my greatest asset. I
+            love to solve unique challenges by embracing what I don't know to find my way through.</p>
+
+          <p> I believe effective communicatation and collaboration is the key to achieving the best outcomes. I
+            approach every project with enthusiasm and
+            curiosty. Whether it's strategic planning or developing responsive websites, I am always eager to tackle new
+            challenges and push the boundaries of creativity.</p>
+        </div>
+        <div class="hero-caption">
+          <p class="mono-text">Creative portfolio coded by me (2024)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected<br>Work</h2>
+    </section>
+
+  </main>
+</body>
+
+</html>
