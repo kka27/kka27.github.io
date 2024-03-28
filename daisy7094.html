@@ -26,7 +26,7 @@
       </ul>
       <!-- Close and menu icons from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24 -->
       <ul class="full-nav">
-        <li><a href="index.html" class="nav-logo"><svg class="logo-button" width="31" height="90" viewBox="0 0 31 90"
+        <li><a href="portfolio.html" class="nav-logo"><svg class="logo-button" width="31" height="90" viewBox="0 0 31 90"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22H13V44H0V22Z" fill="black" />
               <rect y="46" width="13" height="22" fill="black" />
@@ -67,27 +67,61 @@
   </header>
 
   <main>
-    <p>The project Daisy 7094 sought to capture the essence of human conversation through a unique visual
-        representation. Drawing inspiration from diverse artists like Jackson Pollock, Nam June Paik, and Sonia
-        Cillari, the team aimed to showcase the human voice as an art form. They adopted a formalistic approach,
-        focusing on composition, color, line, and form to transcribe various aspects of the human voice into
-        visually appealing digital art.</p>
+    <section class="project-intro">
+      <div class="project-hero">
+        <h1>Daisy<br>7094</h1>
+        <a href="https://www.sfu.ca/~mjd14/9iscourse/journal.html" target="_blank"><img class="clickable-img" src="img/laptopDaisy7094.jpg" alt="Laptop showing a vibrant green and red kaleidoscope"></a>
+      </div>
+  
+      <div class="project-description">
+        <h2>Transmutation of voice into visuals</h2>
+        <div class="text-content">
+          <p>Daisy 7094 is an interactive artwork and team project to capture the essence of human voices and transform them into vibrant kaleidoscopes based on volume, pitch, and silence. Two particiants would have a conversation into their own microphones that are connected to separate laptops. From there, each particiants' voice would generate a kaleidoscope. Finally, both kaleidoscops would blend together and viewable in the future from the web.</p>
+        </div>
+      </div>
+  
+      <div class="img-container">
+        <video controls loop>
+          <source src="video/daisy.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
-    <p>Inspired by Sonia Cillari's work, they utilized participants' voices to create intricate digital images,
-        reminiscent of Pollock's dynamic paintings. However, instead of simple sound waves, they crafted a more
-        intricate fractal design, generating patterns based on volume, pitch, and silence. The patterns evolved
-        dynamically, reflecting the rhythm and intensity of conversation.</p>
+    <section class="project-analysis">
+      <div class="project-description">
+        <h2>How do we show something we can't see?</h2>
+        <div class="text-content">
+          <p>During the development process, our team struggled to land on a unique visual representation for voice. We had a couple of ideas such as <a class="in-text-link" href="https://www.youtube.com/watch?v=IKB1hWWedMk">3D terrain generation</a> similar to The Coding Train's idea but we struggled to figure out a viable system to combine two people's voice into one. After looking for more inspiration, I stumbled across another video by The Coding Train where he made a <a class="in-text-link" href="https://www.youtube.com/watch?v=R3C2giDfmO8"> fractal kaleidoscope</a> using p5.js. My team thought the idea showed potential so I began to develop a couple of prototypes.</p>
+        </div>
+      </div>
+  
+      <div class="img-container">
+        <img src="img/daisy/prototype1.png" alt="One prototype kaleidoscope that used circular patterns to generate the design">
+        <img src="img/daisy/prototype2.png" alt="A different kaleidoscope iteration that used randomness and a fractal pattern">
+      </div>
+  
+      <div class="project-description">
+        <h2>A daunting intoduction to web sockets</h2>
+        <div class="text-content">
+          <p>The final step was to develop a webapp to allow both microphones to independently upload their voices and kaleidoscopes to our server. While the rest of my team slammed their heads against a wall trying to configure a connection to our Simon Fraser Univerty's student available servers, I needed to figure out a way to show the real-time creation of the kaleidoscopes. At this point in time, I had barely touched HTML and CSS.</p>
+          <p>Luckily, since p5 was JavaScript library, it wasn't too difficult to implement it into a website. Once again, The Coding Train saved me with his tutorial on using Node.js to create <a class="in-text-link" href="https://www.youtube.com/watch?v=bjULmG8fqc8">WebSockets</a> for communicating between the microphones and our server.</p>
+        </div>
+      </div>
+    </section>
 
-    <p>
-        The project also incorporated Dieter Daniels' concept of interactivity, merging human voice data with
-        illustration to extend the notion of body interface. Nam June Paik's "Participation TV" influenced their
-        approach to user interaction, leading to the creation of kaleidoscope-like patterns generated by Perlin
-        noise. Unlike Paik's physical exhibition, Daisy 7094 allowed users to engage with the artwork remotely via
-        the internet, fostering interactive experiences accessible from anywhere.</p>
-
-    <img src="img/daisy/daisy7094Diagram.jpg">
-    <img src="img/daisy/daisy7094EarlyPrototype.jpg">
-    <img src="img/daisy/daisy7094Output1.png">
+    <section class="project-conclusion">
+      <div class="project-description">
+        <h2>Final thoughts</h2>
+        <div class="text-content">
+          <p>Overall, I found this project to be quite challenging because this was my introduction to design processes and graphic programming. It was an awesome experience to apply my programmuing knowledge into the realms of graphics and learn a couple of new technologies like Node.js. I was able to get the WebSockets running smoothly while the rest of my team perfected the kaleidoscope and supporting webapps. Our project was well received by the professor and participants during exhibition day. Lastly, credit to my teammates Joel, Sandy, Michael, Benson, and Axel for being an awesome team.</p>
+        </div>
+      </div>
+  
+      <div class="img-container">
+        <img src="img/daisy/daisy7094_Interaction.png" alt="Two particiants having a conversation to have their voices converted into a kaleidoscope">
+      </div>
+    </section>
   </main>
 </body>
 

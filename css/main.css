@@ -1,7 +1,7 @@
 :root {
   /* Font size maintenance */
   --fs-xl: 9rem;
-  --fs-600: 7rem;
+  --fs-600: 2.5rem;
   --fs-500: 1.5rem;
   --fs-400: 1rem;
   --fs-300: 0.85rem;
@@ -91,8 +91,8 @@ h1 {
 
 h2 {
   font-size: var(--fs-600);
+  line-height: calc(var(--fs-600) * 0.9);
   font-weight: 500;
-  line-height: 6rem;
 }
 
 h3 {
@@ -108,7 +108,8 @@ h4 {
 p {
   font-size: var(--fs-400);
   font-weight: 400;
-  width: clamp(25vw, 35vw, 40vw);
+  width: 40vw;
+  min-width: 30rem;
 }
 
 /* Changing bullet colour from:  https://www.w3.org/Style/Examples/007/color-bullets.en.html*/
@@ -323,18 +324,18 @@ nav .mono-text {
 */
 
 main section {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .hero-wrapper {
   margin-top: 2rem;
-  width: 100;
+  max-width: 100vw;
   height: 80vh;
 }
 
 .hero-title {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   text-align: right;
 }
@@ -468,4 +469,47 @@ main section {
 .social-icon {
   color: #F54029;
   text-decoration: none;
+}
+
+/* 
+  PROJECT PAGES ================
+*/
+
+.project-hero {
+  display: flex;
+  gap: clamp(5vw, 25vw, 40vw);
+  margin-bottom: 5rem;
+}
+
+.project-hero img {
+  width: clamp(35vw, 40vw, 45vw);
+  height: 30vw;
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+.project-description {
+  width: min(750px, 100% - (1rem * 2));
+  margin-inline: auto;
+  margin-block: 3rem;
+}
+
+.project-description h2 {
+  margin-bottom: 1.5rem;
+}
+
+.text-content p {
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.img-container img, .img-container video {
+  max-height: 33vw;
 }
