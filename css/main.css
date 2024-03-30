@@ -104,7 +104,6 @@ p {
   font-size: var(--fs-400);
   font-weight: 400;
   max-width: 40vw;
-  min-width: 30rem;
 }
 
 /* Changing bullet colour from:  https://www.w3.org/Style/Examples/007/color-bullets.en.html*/
@@ -207,6 +206,12 @@ ol {
     invert(100%) drop-shadow(-1px -1px 0px var(--washed-black)) drop-shadow(1px -1px 0px var(--washed-black)) drop-shadow(1px 1px 0px var(--washed-black)) drop-shadow(-1px 1px 0px var(--washed-black));
 }
 
+.style-nav ul {
+  display: flex;
+  width: fit-content;
+  gap: 0.5rem;
+  padding: 0;
+}
 
 /* 
 BRANDING ELEMS
@@ -382,11 +387,6 @@ main section {
   top: clamp(60vh, 80vh, 600px);
 }
 
-.mono-text {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 0.8rem;
-}
-
 /* 
   PROJECTS SECTION ========
 */
@@ -457,10 +457,6 @@ main section {
   margin-bottom: 0;
 }
 
-.info p {
-  min-width: 0;
-}
-
 .info {
   display: flex;
   gap: 0.5rem;
@@ -519,4 +515,10 @@ main section {
 
 .img-container img, .img-container video {
   max-height: 33vw;
+  max-width: 33vw;
+  object-fit: cover;
+}
+
+.wide img {
+  max-width: none;
 }

@@ -39,7 +39,7 @@
             </svg>
           </a></li>
         <li>
-          <p class="mono-text">Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
+          <p>Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
         </li>
         <li><a class="nav-button" href="portfolio.html#about">About</a></li>
         <li><a class="nav-button" href="portfolio.html#projects">Projects</a></li>
@@ -70,42 +70,42 @@
     <section class="project-intro">
       <div class="project-hero">
         <h1>Nederland<br>Dans<br>Theatre</h1>
-        <a href="https://www.figma.com/proto/B5faP2WbMp9BtIAUmWbEog/Wireframe-W1?type=design&node-id=152-768&t=Cb8gMwVo0GpthAcI-0&scaling=scale-down&page-id=152%3A764" target="_blank"><img class="clickable-img ndt" src="img/ndt/ndtHero.png" alt="Dancer sprawled across the floor with dramatic lighting"></a>
+        <a href="https://www.sfu.ca/~jta188/IAT235/NDTFinalProject/index.html" target="_blank"><img class="clickable-img ndt" src="img/ndt/ndtHero.png" alt="Dancer sprawled across the floor with dramatic lighting"></a>
       </div>
   
       <div class="project-description">
-        <h3>An experience for emotionally charged contemporary dance</h3>
+        <h3>Getting a taste for contemporary dance</h3>
         <div class="text-content">
-          <p>Daisy 7094 is an interactive artwork and team project to capture the essence of human voices and transform them into vibrant kaleidoscopes based on volume, pitch, and silence. Two particiants would have a conversation into their own microphones that are connected to separate laptops. From there, each particiants' voice would generate a kaleidoscope. Finally, both kaleidoscops would blend together and viewable in the future from the web.</p>
+          <p>The Nederlands Dans Theatre (NDT) microsite was a team project to design a pre-event experience for the dance performance <a class="in-text-link" href="https://www.ndt.nl/en/agenda/now-here-now-always/">Now Here, Now Always</a>. Being a pre-event experience, the website aimed to immerse users into the performance's world of heavy emotion and contemporary dance. The website speaks to the user with a unique gloomy yet spirtual art direction. Additionally, if users are interested in the event they can purchase tickets and use our payment process.</p>
         </div>
       </div>
   
-      <div class="img-container">
-        <video controls loop>
-          <source src="video/daisy.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="img-container wide">
+        <img src="img/ndt/ndtWebsiteHero.png" alt="The hero section of the NDT microsite">
       </div>
     </section>
 
     <section class="project-analysis">
       <div class="project-description">
-        <h3>How do we show something we can't see?</h3>
+        <h3>Designing for something I don't fully understand</h3>
         <div class="text-content">
-          <p>During the development process, our team struggled to land on a unique visual representation for voice. We had a couple of ideas such as <a class="in-text-link" href="https://www.youtube.com/watch?v=IKB1hWWedMk">3D terrain generation</a> similar to The Coding Train's idea but we struggled to figure out a viable system to combine two people's voice into one. After looking for more inspiration, I stumbled across another video by The Coding Train where he made a <a class="in-text-link" href="https://www.youtube.com/watch?v=R3C2giDfmO8"> fractal kaleidoscope</a> using p5.js. My team thought the idea showed potential so I began to develop a couple of prototypes.</p>
+          <p>This project was my first time developing an art direction in the realm of fine arts. My team and I struggled to find a way to show the paradoxical nuances and intensities of emotion, a major theme of Now Here. Now Always. At first experimented with warm colours with bright accents with the intention of communicating heigtened emotions like passion or joy but in the context of Now Here, Now Always, I thought it didn't suit the event. Most of the dance performaces were choreographed around a tragic loss of a loved one or feeling lost and alone.</p>
+
+          <p>After experimenting further with darker colours, I settled on a dark blue theme contrasted with vibrant hues of yellow and purple to balance the gloominess with optimism.The finalized colour palette communicates the eeriness of human emotions that strikes a balance betwen feeling somber yet curious. The warm yellow accents communicate a sense of optimism despite the overwhelming gloom while the purple acts as a neutral force to represent spirituality throughout our journies.</p>
         </div>
       </div>
   
       <div class="img-container">
-        <img src="img/daisy/prototype1.png" alt="One prototype kaleidoscope that used circular patterns to generate the design">
-        <img src="img/daisy/prototype2.png" alt="A different kaleidoscope iteration that used randomness and a fractal pattern">
+        <img src="img/ndt/ndtColour1.png" alt="An early iteration of the microsite that used warmer colours like red, orange, and yellow">
+        <img src="img/ndt/ndtColour2.png" alt="Our final iteration using dark blue and bright accents of purple or yellow to show a need for spirituality">
       </div>
   
       <div class="project-description">
-        <h3>A daunting intoduction to web sockets</h3>
+        <h3>Hey can you send the files again?</h3>
         <div class="text-content">
-          <p>The final step was to develop a webapp to allow both microphones to independently upload their voices and kaleidoscopes to our server. While the rest of my team slammed their heads against a wall trying to configure a connection to our Simon Fraser Univerty's student available servers, I needed to figure out a way to show the real-time creation of the kaleidoscopes. At this point in time, I had barely touched HTML and CSS.</p>
-          <p>Luckily, since p5 was JavaScript library, it wasn't too difficult to implement it into a website. Once again, The Coding Train saved me with his tutorial on using Node.js to create <a class="in-text-link" href="https://www.youtube.com/watch?v=bjULmG8fqc8">WebSockets</a> for communicating between the microphones and our server.</p>
+          <p>During the intial stages of implementing our website, one person would make changes to the .html or .css files and the rest of us would download the file, make changes, and resend the file. This was a nightmare for the team so we began looking for alternatives to our primitive linear workflow. We eventually started a Git repository which allowed us to work both synchronously and asyncrhonmously to minimize editing conflicts. As a result, we removed any barriers to development such as waiting on someone to send updated files, and increased productivity by allowing multiple people to work on the website at a time.</p>
+
+          <p>Perhaps the most stressful part of this project was the fact that none of us had any experience creating websites. Our instructor gave us a two class HTML/CSS bootcamp which none of us understood but somehow managed to create a final product after way too many iterations and debugging sprints from mysterious margins and padding. The first takeaway from this experience is to establish a style guide early on to unify basic components, colours, and font styling to avoid major headaches down the line.</p>
         </div>
       </div>
     </section>
@@ -114,12 +114,12 @@
       <div class="project-description">
         <h3>Final thoughts</h3>
         <div class="text-content">
-          <p>Overall, I found this project to be quite challenging because this was my introduction to design processes and graphic programming. It was an awesome experience to apply my programmuing knowledge into the realms of graphics and learn a couple of new technologies like Node.js. I was able to get the WebSockets running smoothly while the rest of my team perfected the kaleidoscope and supporting webapps. Our project was well received by the professor and participants during exhibition day. Lastly, credit to my teammates Joel, Sandy, Michael, Benson, and Axel for being an awesome team.</p>
+          <p>I was quite happy with the way our project turned out. Although we had moments of frustration and fatigue, we found relief in our final product. This project taught me how to work together as a team of programmers. Organization is the key to success. Establish a system to sharing resources, and create a style guide to set the foundation of what is expected from the start. Shoutout to Tommy Lin, Jacquelyn Tang, Anita Kuo, and Jianting Liang for being a wonderful team.</p>
         </div>
       </div>
   
-      <div class="img-container">
-        <img src="img/daisy/daisy7094_Interaction.png" alt="Two particiants having a conversation to have their voices converted into a kaleidoscope">
+      <div class="img-container wide">
+        <img src="img/ndt/ndtFinal.png" alt="A man embracing the corpse of a friend in the performance">
       </div>
     </section>
   </main>
