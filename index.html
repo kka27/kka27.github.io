@@ -14,19 +14,14 @@
   <header class="navbar">
     <nav>
       <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26"
-              viewBox="0 -960 960 960" width="26">
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg></a></li>
-        <li><a class="nav-button" href="index.html#interactive_elements">Interactive Elems.</a></li>
-        <li><a class="nav-button" href="index.html#text_elements">Text Elems.</a></li>
-        <li><a class="nav-button" href="index.html#branding_elem">Branding Elems.</a></li>
-        <li><a class="nav-button" href="portfolio.html">Site</a></li>
+        <li onclick=hideSidebar()><a class="nav-button close-button" href="#">Close</a></li>
+        <li><a class="nav-button" href="portfolio.html#about">About</a></li>
+        <li><a class="nav-button" href="portfolio.html#projects">Projects</a></li>
+        <li><a class="nav-button" href="portfolio.html#contact">Contact</a></li>
       </ul>
       <!-- Close and menu icons from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24 -->
-      <ul>
-        <li><a href="index.html" class="nav-logo"><svg class="logo-button" width="31" height="90" viewBox="0 0 31 90"
+      <ul class="full-nav">
+        <li><a href="portfolio.html" class="nav-logo"><svg class="logo-button" width="31" height="90" viewBox="0 0 31 90"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22H13V44H0V22Z" fill="black" />
               <rect y="46" width="13" height="22" fill="black" />
@@ -39,14 +34,14 @@
             </svg>
           </a></li>
         <li>
-          <p>Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
+          <p class="accent-text">Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
         </li>
-        <li><a class="nav-button" href="index.html#interactive_elements">Interactive Elems.</a></li>
-        <li><a class="nav-button" href="index.html#text_elements">Text Elems.</a></li>
-        <li><a class="nav-button" href="index.html#branding_elem">Branding Elems.</a></li>
-        <li><a class="nav-button" href="portfolio.html">Site</a></li>
+        <li class="hideOnMobile"><a class="nav-button" href="portfolio.html#about">About</a></li>
+        <li class="hideOnMobile"><a class="nav-button" href="portfolio.html#projects">Projects</a></li>
+        <li class="hideOnMobile"><a class="nav-button" href="portfolio.html#contact">Contact</a></li>
+
         <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-icon"
-              xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+              xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
               <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg></a></li>
       </ul>
