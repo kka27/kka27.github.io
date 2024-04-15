@@ -1,3 +1,5 @@
+"use strict";
+
 // get all images in .carousel class
 const images = document.querySelectorAll('.carousel img');
 let currentIndex = 0;

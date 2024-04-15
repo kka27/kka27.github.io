@@ -28,6 +28,7 @@ body {
   margin: 0 20px;
   padding: 0;
   background-color: var(--bg-grey);
+  cursor: none;
 }
 
 /* 
@@ -146,6 +147,52 @@ ol {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* Cursor */
+/* Masking cursor from: https://www.youtube.com/watch?v=nMGVwP3ww2M */
+/* GSAP cursor from: https://dionarodrigues.dev/blog/how-create-a-custom-cursor-follower-with-gsap */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid var(--washed-black);
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: normal;
+  user-select: none;
+}
+
+.click-text {
+  font-size: 0.35rem;
+  color: var(--bright-white);
+  transform: translate(0, 10%);
+  text-align: center;
+  display: none;
+}
+
+.grow-large {
+  background: var(--bright-white);
+  border: none;
+  mix-blend-mode: difference;
+  transform: scale(6);
+}
+
+.grow-med {
+  background: var(--bright-white);
+  border: none;
+  mix-blend-mode: difference;
+  transform: scale(3);
+}
+
+.click-cue {
+  cursor: none;
+  background: var(--warm-orange);
+  border: none;
+  transform: scale(3);
+}
+
 /* Styling for the navigation button */
 .nav-button {
   display: inline-block;
@@ -196,9 +243,13 @@ ol {
   transition: .3s ease-in-out;
 }
 
+a {
+  cursor: none;
+}
+
 .clickable-img:hover {
-  -webkit-filter: grayscale(100%) blur(3px);
-  filter: grayscale(100%) blur(3px);
+  -webkit-filter: grayscale(100%) blur(1px);
+  filter: grayscale(100%) blur(1px);
 }
 
 .example-img {
@@ -265,16 +316,14 @@ nav .nav-button {
   margin-inline-start: 0.5rem;
 }
 
+nav .accent-text {
+  font-size: 1rem;
+}
+
 .full-nav li:first-child,
 .full-nav li:nth-child(2) {
   /* Make logo stay on left side */
   margin-right: auto;
-}
-
-nav .mono-text {
-  position: absolute;
-  top: 25px;
-  left: 10rem;
 }
 
 .sidebar {
@@ -577,6 +626,7 @@ nav .mono-text {
 .info {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -586,6 +636,7 @@ nav .mono-text {
 
 .social-icon,
 .fa-solid {
+  font-size: clamp(2rem, 10vw, 3rem);
   color: var(--warm-orange);
   text-decoration: none;
 }
