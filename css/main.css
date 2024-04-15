@@ -25,10 +25,14 @@
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   background-color: var(--bg-grey);
   cursor: none;
+}
+
+main {
+  margin: 0 20px;
 }
 
 /* 
@@ -149,13 +153,13 @@ ol {
 
 /* Cursor */
 /* Masking cursor from: https://www.youtube.com/watch?v=nMGVwP3ww2M */
-/* GSAP cursor from: https://dionarodrigues.dev/blog/how-create-a-custom-cursor-follower-with-gsap */
+/* GSAP cursor from: https://www.youtube.com/watch?v=uBd0ziC6rCs&t=452s */
 .cursor {
   position: fixed;
   width: 20px;
   height: 20px;
-  border-radius: 100%;
-  border: 2px solid var(--washed-black);
+  border-radius: 50%;
+  background: var(--warm-orange);
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease;
   pointer-events: none;
@@ -167,30 +171,28 @@ ol {
 .click-text {
   font-size: 0.35rem;
   color: var(--bright-white);
-  transform: translate(0, 10%);
   text-align: center;
+  line-height: 9px;
   display: none;
 }
 
-.grow-large {
-  background: var(--bright-white);
-  border: none;
-  mix-blend-mode: difference;
-  transform: scale(6);
-}
-
-.grow-med {
-  background: var(--bright-white);
-  border: none;
-  mix-blend-mode: difference;
-  transform: scale(3);
-}
-
-.click-cue {
+.click-img {
   cursor: none;
   background: var(--warm-orange);
-  border: none;
   transform: scale(3);
+}
+
+.click-link, .click-nav {
+  cursor: none;
+  background: var(--washed-black);
+  transform: scale(0.5);
+}
+
+.click-social {
+  cursor: none;
+  background: var(--warm-orange);
+  transform: scale(3.5);
+  mix-blend-mode: darken;
 }
 
 /* Styling for the navigation button */
@@ -216,7 +218,7 @@ ol {
 }
 
 /* Styling for the in-text link*/
-.in-text-link, .view-button {
+.in-text-link {
   /* Link animation from: https://codepen.io/team/css-tricks/pen/gOXMLLY */
   color: var(--washed-black);
   box-shadow: inset 0 0 0 0 var(--warm-orange);
@@ -297,6 +299,7 @@ Nav bar --------------
 nav {
   border-bottom: 1px solid var(--washed-black);
   background-color: var(--bg-grey);
+  padding: 0 20px;
 }
 
 nav ul {
@@ -399,7 +402,7 @@ nav .accent-text {
 
 .home-content {
   max-height: 100vh;
-  margin-bottom: 20rem;
+  margin-bottom: 25rem;
 }
 
 .hero-wrapper {
@@ -509,8 +512,15 @@ nav .accent-text {
     bottom: -10vh;
   }
   
-  .about-description p{
+  .about-description p {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-description {
+    margin: 0;
+    margin-top: 4rem;
   }
 }
 
@@ -634,11 +644,14 @@ nav .accent-text {
   margin: 0;
 }
 
-.social-icon,
-.fa-solid {
+.social-icon {
   font-size: clamp(2rem, 10vw, 3rem);
   color: var(--warm-orange);
   text-decoration: none;
+}
+
+.social-icon:hover, .social-icon:active {
+  color: var(--washed-black);
 }
 
 @media (max-width: 1100px) {
