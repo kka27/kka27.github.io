@@ -6,7 +6,7 @@ var img = document.querySelectorAll('.clickable-img');
 var textLink = document.querySelectorAll('.in-text-link');
 var navBut = document.querySelectorAll('.nav-button');
 var navLogo = document.querySelectorAll('.nav-logo');
-var socialIcon = document.querySelectorAll('.social-icon');
+var socialIcon = document.querySelectorAll('i');
 var mouseX = 0;
 var mouseY = 0;
 

@@ -23,6 +23,11 @@
   }
 }
 
+html {
+  /* Avoid overscrolling under header from: https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
+  scroll-padding-top: 20rem;
+}
+
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   margin: 0;
@@ -549,8 +554,8 @@ nav .accent-text {
   align-self: flex-start;
 }
 
-.project .view-button {
-  margin-top: 0.5rem;
+.project > .in-text-link {
+  margin-top: 0.75rem;
 }
 
 #projects h2 {
@@ -630,27 +635,61 @@ nav .accent-text {
 }
 
 #contact h2 {
+  margin-bottom: 10rem;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   margin-bottom: 5rem;
 }
 
-.info {
+#contact-form input {
+  font-family: 'Roboto Mono', monospace;
+  font-size: var(--fs-300);
+  background: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--washed-black);
+}
+
+#contact-form input[type=email] {
+  width: 66%;
+  background-color: none;
+  border-radius: 0px;
+}
+
+#contact-form input[type=email]:focus {
+  background-color: var(--bright-white);
+  border: 2px solid var(--washed-black);
+  border-radius: 0px;
+}
+
+#contact-form input[type=submit]  {
+  width: 33%;
+  border-radius: 5em;  
+}
+
+/* Stlying web forms from: https://www.w3schools.com/css/css_form.asp */
+#contact-form input[type="submit"]:hover,
+#contact-form input[type="submit"]:active {
+  background-color: var(--warm-orange);
+  cursor: pointer;
+}
+
+.icon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
-.info p {
-  margin: 0;
-}
-
-.social-icon {
+i {
   font-size: clamp(2rem, 10vw, 3rem);
   color: var(--warm-orange);
   text-decoration: none;
 }
 
-.social-icon:hover, .social-icon:active {
+i:hover, i:active {
   color: var(--washed-black);
 }
 
@@ -719,7 +758,7 @@ nav .accent-text {
   }
 }
 
-.project-description {
+.project-description, #citations {
   width: min(750px, 100% - (1rem * 2));
   margin-inline: auto;
 }
@@ -807,4 +846,13 @@ footer {
 footer a {
   flex-shrink: 0;
   font-family: 'Roboto Mono', monospace;
+}
+
+/* 
+  CITATIONS =========================
+*/
+
+#citations > h2 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
