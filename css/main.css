@@ -655,7 +655,7 @@ nav .accent-text {
 
 #contact-form input[type=email] {
   width: 66%;
-  background-color: none;
+  background-color: #11111100;
   border-radius: 0px;
 }
 

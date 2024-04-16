@@ -13,7 +13,7 @@
 
 <body>
   <header class="navbar">
-    <nav>
+    <nav role="menu">
       <ul class="sidebar" role="menubar">
         <li role="none">
           <a class="nav-button close-button" role="menuitem" href="#" onclick="hideSidebar()">Close</a>
@@ -58,8 +58,7 @@
         <li class="menu-button" onclick="showSidebar()" role="none">
           <a href="#" role="menuitem"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="36"
               viewBox="0 -960 960 960" width="36">
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg></a>
         </li>
       </ul>
@@ -83,16 +82,23 @@
     <section class="project-intro">
       <div class="project-hero">
         <h1>Nederland<br>Dans<br>Theatre</h1>
-        <a href="https://www.sfu.ca/~jta188/IAT235/NDTFinalProject/index.html" target="_blank"><img class="clickable-img ndt" src="img/ndt/ndtHero.png" alt="Dancer sprawled across the floor with dramatic lighting"></a>
+        <a href="https://www.sfu.ca/~jta188/IAT235/NDTFinalProject/index.html" target="_blank"><img
+            class="clickable-img ndt" src="img/ndt/ndtHero.png"
+            alt="Dancer sprawled across the floor with dramatic lighting"></a>
       </div>
-  
+
       <div class="project-description">
         <h2>Getting a taste for contemporary dance</h2>
         <div class="text-content">
-          <p>The Nederlands Dans Theatre (NDT) microsite was a team project to design a pre-event experience for the dance performance <a class="in-text-link" href="https://www.ndt.nl/en/agenda/now-here-now-always/">Now Here, Now Always</a>. Being a pre-event experience, the website aimed to immerse users into the performance's world of heavy emotion and contemporary dance. The website speaks to the user with a unique gloomy yet spirtual art direction. Additionally, if users are interested in the event they can purchase tickets and use our payment process.</p>
+          <p>The Nederlands Dans Theatre (NDT) microsite was a team project to design a pre-event experience for the
+            dance performance <a class="in-text-link" href="https://www.ndt.nl/en/agenda/now-here-now-always/">Now Here,
+              Now Always</a>. Being a pre-event experience, the website aimed to immerse users into the performance's
+            world of heavy emotion and contemporary dance. The website speaks to the user with a unique gloomy yet
+            spirtual art direction. Additionally, if users are interested in the event they can purchase tickets and use
+            our payment process.</p>
         </div>
       </div>
-  
+
       <div class="img-container wide">
         <img src="img/ndt/ndtWebsiteHero.png" alt="The hero section of the NDT microsite">
       </div>
@@ -102,26 +108,46 @@
       <div class="project-description">
         <h2>Designing for something I don't fully understand</h2>
         <div class="text-content">
-          <p>This project was my first time developing an art direction in the realm of fine arts. My team and I struggled to find a way to show the paradoxical nuances and intensities of emotion, a major theme of Now Here. Now Always. At first experimented with warm colours with bright accents with the intention of communicating heigtened emotions like passion or joy but in the context of Now Here, Now Always, I thought it didn't suit the event. Most of the dance performaces were choreographed around a tragic loss of a loved one or feeling lost and alone.</p>
+          <p>This project was my first time developing an art direction in the realm of fine arts. My team and I
+            struggled to find a way to show the paradoxical nuances and intensities of emotion, a major theme of Now
+            Here. Now Always. At first experimented with warm colours with bright accents with the intention of
+            communicating heigtened emotions like passion or joy but in the context of Now Here, Now Always, I thought
+            it didn't suit the event. Most of the dance performaces were choreographed around a tragic loss of a loved
+            one or feeling lost and alone.</p>
 
-          <p>After experimenting further with darker colours, I settled on a dark blue theme contrasted with vibrant hues of yellow and purple to balance the gloominess with optimism.The finalized colour palette communicates the eeriness of human emotions that strikes a balance betwen feeling somber yet curious. The warm yellow accents communicate a sense of optimism despite the overwhelming gloom while the purple acts as a neutral force to represent spirituality throughout our journies.</p>
+          <p>After experimenting further with darker colours, I settled on a dark blue theme contrasted with vibrant
+            hues of yellow and purple to balance the gloominess with optimism.The finalized colour palette communicates
+            the eeriness of human emotions that strikes a balance betwen feeling somber yet curious. The warm yellow
+            accents communicate a sense of optimism despite the overwhelming gloom while the purple acts as a neutral
+            force to represent spirituality throughout our journies.</p>
         </div>
       </div>
-  
+
       <!-- Image carousel from Bro Code: https://www.youtube.com/watch?v=749ta0nvj8s -->
       <div class="img-container carousel">
-        <img src="img/ndt/ndtColour1.png" alt="An early iteration of the microsite that used warmer colours like red, orange, and yellow">
-        <img src="img/ndt/ndtColour2.png" alt="Our final iteration using dark blue and bright accents of purple or yellow to show a need for spirituality">
-        <button class="prev-button">&#10094</button>
-        <button class="next-button">&#10095</button>
+        <img src="img/ndt/ndtColour1.png"
+          alt="An early iteration of the microsite that used warmer colours like red, orange, and yellow">
+        <img src="img/ndt/ndtColour2.png"
+          alt="Our final iteration using dark blue and bright accents of purple or yellow to show a need for spirituality">
+        <button class="prev-button">&#10094;</button>
+        <button class="next-button">&#10095;</button>
       </div>
-  
+
       <div class="project-description">
         <h2>The file dilemma</h2>
         <div class="text-content">
-          <p>During the intial stages of implementing our website, one person would make changes to the .html or .css files and the rest of us would download the file, make changes, and resend the file. This was a nightmare for the team so we began looking for alternatives to our primitive linear workflow. We eventually started a Git repository which allowed us to work both synchronously and asyncrhonmously to minimize editing conflicts. As a result, we removed any barriers to development such as waiting on someone to send updated files, and increased productivity by allowing multiple people to work on the website at a time.</p>
+          <p>During the intial stages of implementing our website, one person would make changes to the .html or .css
+            files and the rest of us would download the file, make changes, and resend the file. This was a nightmare
+            for the team so we began looking for alternatives to our primitive linear workflow. We eventually started a
+            Git repository which allowed us to work both synchronously and asyncrhonmously to minimize editing
+            conflicts. As a result, we removed any barriers to development such as waiting on someone to send updated
+            files, and increased productivity by allowing multiple people to work on the website at a time.</p>
 
-          <p>Perhaps the most stressful part of this project was the fact that none of us had any experience creating websites. Our instructor gave us a two class HTML/CSS bootcamp which none of us understood but somehow managed to create a final product after way too many iterations and debugging sprints from mysterious margins and padding. The first takeaway from this experience is to establish a style guide early on to unify basic components, colours, and font styling to avoid major headaches down the line.</p>
+          <p>Perhaps the most stressful part of this project was the fact that none of us had any experience creating
+            websites. Our instructor gave us a two class HTML/CSS bootcamp which none of us understood but somehow
+            managed to create a final product after way too many iterations and debugging sprints from mysterious
+            margins and padding. The first takeaway from this experience is to establish a style guide early on to unify
+            basic components, colours, and font styling to avoid major headaches down the line.</p>
         </div>
       </div>
     </section>
@@ -130,25 +156,30 @@
       <div class="project-description">
         <h2>Final thoughts</h2>
         <div class="text-content">
-          <p>I was quite happy with the way our project turned out. Although we had moments of frustration and fatigue, we found relief in our final product. This project taught me how to work together as a team of programmers. Organization is the key to success. Establish a system to sharing resources, and create a style guide to set the foundation of what is expected from the start. Shoutout to Tommy Lin, Jacquelyn Tang, Anita Kuo, and Jianting Liang for being a wonderful team.</p>
+          <p>I was quite happy with the way our project turned out. Although we had moments of frustration and fatigue,
+            we found relief in our final product. This project taught me how to work together as a team of programmers.
+            Organization is the key to success. Establish a system to sharing resources, and create a style guide to set
+            the foundation of what is expected from the start. Shoutout to Tommy Lin, Jacquelyn Tang, Anita Kuo, and
+            Jianting Liang for being a wonderful team.</p>
         </div>
       </div>
-  
+
       <div class="img-container wide">
         <img src="img/ndt/ndtFinal.png" alt="A man embracing the corpse of a friend in the performance">
       </div>
     </section>
   </main>
 
-  <div class="cursor"><p class="click-text">Click</p></div>
-</body>
-
+  <div class="cursor">
+    <p class="click-text">Click</p>
+  </div>
   <!-- JavaScript scripts -->
   <script src="scripts/imageCarousel.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <!-- Lenis scroll from: https://github.com/darkroomengineering/lenis -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
-  
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
   <script src="scripts/cursor.js"></script>
+</body>
 
 </html>

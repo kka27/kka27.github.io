@@ -13,7 +13,7 @@
 
 <body>
   <header class="navbar">
-    <nav>
+    <nav role="menu">
       <ul class="sidebar" role="menubar">
         <li role="none">
           <a class="nav-button close-button" role="menuitem" href="#" onclick="hideSidebar()">Close</a>
@@ -58,8 +58,7 @@
         <li class="menu-button" onclick="showSidebar()" role="none">
           <a href="#" role="menuitem"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="36"
               viewBox="0 -960 960 960" width="36">
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg></a>
         </li>
       </ul>
@@ -83,16 +82,21 @@
     <section class="project-intro">
       <div class="project-hero">
         <h1>Daisy<br>7094</h1>
-        <a href="https://www.sfu.ca/~mjd14/9iscourse/journal.html" target="_blank"><img class="clickable-img daisy" src="img/laptopDaisy7094.jpg" alt="Laptop showing a vibrant green and red kaleidoscope"></a>
+        <a href="https://www.sfu.ca/~mjd14/9iscourse/journal.html" target="_blank"><img class="clickable-img daisy"
+            src="img/laptopDaisy7094.jpg" alt="Laptop showing a vibrant green and red kaleidoscope"></a>
       </div>
-  
+
       <div class="project-description">
         <h3>Transmutation of voice into visuals</h3>
         <div class="text-content">
-          <p>Daisy 7094 is an interactive artwork and team project to capture the essence of human voices and transform them into vibrant kaleidoscopes based on volume, pitch, and silence. Two particiants would have a conversation into their own microphones that are connected to separate laptops. From there, each particiants' voice would generate a kaleidoscope. Finally, both kaleidoscops would blend together and viewable in the future from the web.</p>
+          <p>Daisy 7094 is an interactive artwork and team project to capture the essence of human voices and transform
+            them into vibrant kaleidoscopes based on volume, pitch, and silence. Two particiants would have a
+            conversation into their own microphones that are connected to separate laptops. From there, each
+            particiants' voice would generate a kaleidoscope. Finally, both kaleidoscops would blend together and
+            viewable in the future from the web.</p>
         </div>
       </div>
-  
+
       <div class="img-container">
         <video controls loop>
           <source src="video/daisy.mp4" type="video/mp4">
@@ -105,23 +109,39 @@
       <div class="project-description">
         <h3>How do we show something we can't see?</h3>
         <div class="text-content">
-          <p>During the development process, our team struggled to land on a unique visual representation for voice. We had a couple of ideas such as <a class="in-text-link" href="https://www.youtube.com/watch?v=IKB1hWWedMk">3D terrain generation</a> similar to The Coding Train's idea but we struggled to figure out a viable system to combine two people's voice into one. After looking for more inspiration, I stumbled across another video by The Coding Train where he made a <a class="in-text-link" href="https://www.youtube.com/watch?v=R3C2giDfmO8"> fractal kaleidoscope</a> using p5.js. My team thought the idea showed potential so I began to develop a couple of prototypes.</p>
+          <p>During the development process, our team struggled to land on a unique visual representation for voice. We
+            had a couple of ideas such as <a class="in-text-link" href="https://www.youtube.com/watch?v=IKB1hWWedMk">3D
+              terrain generation</a> similar to The Coding Train's idea but we struggled to figure out a viable system
+            to combine two people's voice into one. After looking for more inspiration, I stumbled across another video
+            by The Coding Train where he made a <a class="in-text-link"
+              href="https://www.youtube.com/watch?v=R3C2giDfmO8"> fractal kaleidoscope</a> using p5.js. My team thought
+            the idea showed potential so I began to develop a couple of prototypes.</p>
         </div>
 
         <div class="img-container carousel">
-          <img src="img/daisy/prototype1.png" alt="One prototype kaleidoscope that used circular patterns to generate the design">
-          <img src="img/daisy/prototype2.png" alt="A different kaleidoscope iteration that used randomness and a fractal pattern">
-          <img src="img/daisy/daisyFinalResult.png" alt="The final fractal kaleidoscope that features thin and thick strokes and vibrant colours">
-          <button class="prev-button">&#10094</button>
-          <button class="next-button">&#10095</button>
+          <img src="img/daisy/prototype1.png"
+            alt="One prototype kaleidoscope that used circular patterns to generate the design">
+          <img src="img/daisy/prototype2.png"
+            alt="A different kaleidoscope iteration that used randomness and a fractal pattern">
+          <img src="img/daisy/daisyFinalResult.png"
+            alt="The final fractal kaleidoscope that features thin and thick strokes and vibrant colours">
+          <button class="prev-button">&#10094;</button>
+          <button class="next-button">&#10095;</button>
         </div>
       </div>
-  
+
       <div class="project-description">
         <h3>A daunting intoduction to web sockets</h3>
         <div class="text-content">
-          <p>The final step was to develop a webapp to allow both microphones to independently upload their voices and kaleidoscopes to our server. While the rest of my team slammed their heads against a wall trying to configure a connection to our Simon Fraser Univerty's student available servers, I needed to figure out a way to show the real-time creation of the kaleidoscopes. At this point in time, I had barely touched HTML and CSS.</p>
-          <p>Luckily, since p5 was JavaScript library, it wasn't too difficult to implement it into a website. Once again, The Coding Train saved me with his tutorial on using Node.js to create <a class="in-text-link" href="https://www.youtube.com/watch?v=bjULmG8fqc8">WebSockets</a> for communicating between the microphones and our server.</p>
+          <p>The final step was to develop a webapp to allow both microphones to independently upload their voices and
+            kaleidoscopes to our server. While the rest of my team slammed their heads against a wall trying to
+            configure a connection to our Simon Fraser Univerty's student available servers, I needed to figure out a
+            way to show the real-time creation of the kaleidoscopes. At this point in time, I had barely touched HTML
+            and CSS.</p>
+          <p>Luckily, since p5 was JavaScript library, it wasn't too difficult to implement it into a website. Once
+            again, The Coding Train saved me with his tutorial on using Node.js to create <a class="in-text-link"
+              href="https://www.youtube.com/watch?v=bjULmG8fqc8">WebSockets</a> for communicating between the
+            microphones and our server.</p>
         </div>
       </div>
     </section>
@@ -130,25 +150,32 @@
       <div class="project-description">
         <h3>Final thoughts</h3>
         <div class="text-content">
-          <p>Overall, I found this project to be quite challenging because this was my introduction to design processes and graphic programming. It was an awesome experience to apply my programmuing knowledge into the realms of graphics and learn a couple of new technologies like Node.js. I was able to get the WebSockets running smoothly while the rest of my team perfected the kaleidoscope and supporting webapps. Our project was well received by the professor and participants during exhibition day. Lastly, credit to my teammates Joel, Sandy, Michael, Benson, and Axel for being an awesome team.</p>
+          <p>Overall, I found this project to be quite challenging because this was my introduction to design processes
+            and graphic programming. It was an awesome experience to apply my programmuing knowledge into the realms of
+            graphics and learn a couple of new technologies like Node.js. I was able to get the WebSockets running
+            smoothly while the rest of my team perfected the kaleidoscope and supporting webapps. Our project was well
+            received by the professor and participants during exhibition day. Lastly, credit to my teammates Joel,
+            Sandy, Michael, Benson, and Axel for being an awesome team.</p>
         </div>
       </div>
-  
+
       <div class="img-container">
-        <img src="img/daisy/daisy7094_Interaction.png" alt="Two particiants having a conversation to have their voices converted into a kaleidoscope">
+        <img src="img/daisy/daisy7094_Interaction.png"
+          alt="Two particiants having a conversation to have their voices converted into a kaleidoscope">
       </div>
     </section>
   </main>
 
-  <div class="cursor"><p class="click-text">Click</p></div>
-</body>
+  <div class="cursor">
+    <p class="click-text">Click</p>
+  </div>
+  <!-- JavaScript scripts -->
+  <script src="scripts/imageCarousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <!-- Lenis scroll from: https://github.com/darkroomengineering/lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-    <!-- JavaScript scripts -->
-    <script src="scripts/imageCarousel.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <!-- Lenis scroll from: https://github.com/darkroomengineering/lenis -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
-  
   <script src="scripts/cursor.js"></script>
+</body>
 
 </html>
