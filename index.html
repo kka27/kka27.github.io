@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Style Guide</title>
+  <title>Kelvin Kwan Portfolio</title>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -18,18 +19,18 @@
           <a class="nav-button close-button" role="menuitem" href="#" onclick="hideSidebar()">Close</a>
         </li>
         <li role="none">
-          <a class="nav-button" role="menuitem" href="portfolio.html#about" onclick="hideSidebar()">About</a>
+          <a class="nav-button" role="menuitem" href="index.html#about" onclick="hideSidebar()">About</a>
         </li>
         <li role="none">
-          <a class="nav-button" role="menuitem" href="portfolio.html#projects" onclick="hideSidebar()">Projects</a>
+          <a class="nav-button" role="menuitem" href="index.html#projects" onclick="hideSidebar()">Projects</a>
         </li>
         <li role="none">
-          <a class="nav-button" role="menuitem" href="portfolio.html#contact" onclick="hideSidebar()">Contact</a>
+          <a class="nav-button" role="menuitem" href="index.html#contact" onclick="hideSidebar()">Contact</a>
         </li>
       </ul>
       <ul class="full-nav">
         <li>
-          <a href="portfolio.html" class="nav-logo" role="menuitem"><svg class="logo-button" width="31" height="90"
+          <a href="index.html" class="nav-logo" role="menuitem"><svg class="logo-button" width="31" height="90"
               viewBox="0 0 31 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 22H13V44H0V22Z" fill="black" />
               <rect y="46" width="13" height="22" fill="black" />
@@ -46,13 +47,13 @@
           <p class="accent-text">Kelvin Kwan / Designer / Developer / Vancouver, BC</p>
         </li>
         <li class="hideOnMobile">
-          <a class="nav-button" href="portfolio.html#about" role="menuitem">About</a>
+          <a class="nav-button" href="index.html#about" role="menuitem">About</a>
         </li>
         <li class="hideOnMobile">
-          <a class="nav-button" href="portfolio.html#projects" role="menuitem">Projects</a>
+          <a class="nav-button" href="index.html#projects" role="menuitem">Projects</a>
         </li>
         <li class="hideOnMobile">
-          <a class="nav-button" href="portfolio.html#contact" role="menuitem">Contact</a>
+          <a class="nav-button" href="index.html#contact" role="menuitem">Contact</a>
         </li>
         <li class="menu-button" onclick="showSidebar()" role="none">
           <a href="#" role="menuitem"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="36"
@@ -78,168 +79,77 @@
     </script>
   </header>
 
-  <div class="style-nav">
-    <ul>
-      <li><a class="nav-button" href="index.html#interactive_elements">Interactive Elems.</a></li>
-      <li><a class="nav-button" href="index.html#text_elements">Text Elems.</a></li>
-      <li><a class="nav-button" href="index.html#branding_elem">Branding Elems.</a></li>
-    </ul>
-  </div>
 
-  <section class="elem-section">
-    <h1>Kelvin Kwan Portfolio Style Guide<span id="dot">.</span></h1>
-  </section>
-
-  <!-- INTERACTIVE ELEMENTS SECTION // -->
-  <section class="elem-section" id="interactive_elements">
-
-    <!-- Default Button styling section -->
-    <section>
-      <h2>Navigation Button</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selector:</h3>
-        <p>.nav-button</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;button class="nav-button" type="button"&gt;Nav Button&lt;/button&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <a class="nav-button">Nav Button</a>
+  <main>
+    <section class="home-content" id="about">
+      <div class="hero-wrapper">
+        <div class="hero-title">
+          <h1 class="line first">Kelvin Kwan</h1>
+          <h1 class="line second">UX Designer</h1>
+          <div class="line third">
+            <div class="dot-decor">&</div>
+            <h1>Web Dev</h1>
+          </div>
+        </div>
+        <div class="about-description">
+          <p>Hello! I’m Kelvin, a UX designer, web developer, and student with a strong background in computer science.
+            My aptitude for continuous learning and self-reflection is my greatest asset. I
+            love to solve challenges by embracing what I don't know and finding my way through. I'm experienced in
+            conducting user research and testing to sythesize a design strategy to suit any challenge. Furthermore, I'm
+            comfortable using Figma, Photoshop, and Illustrator to create designs and other digital assets. Lastly, I'm
+            proficient in object-oriented programming and competenet in frontend development.</p>
+        </div>
+        <div class="hero-caption">
+          <p class="mono-text">Creative portfolio coded by me (2024)</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>In-text link</h2>
+    <section class="home-content" id="projects">
+      <h2>Selected<br>Work</h2>
 
-      <div class="content-wrapper">
-        <h3>CSS selector:</h3>
-        <p>.in-text-link</p>
+      <div class="projects-wrapper">
+        <div class="project project2">
+          <h3>2. Daisy 7094</h3>
+          <a href="daisy7094.html"><img class="clickable-img" src="img/laptopDaisy7094.jpg"
+              alt="Preview image of Nederlands Dans Theatre microsite, two emotionally expressive dancers"></a>
+          <a class="in-text-link" href="daisy7094.html">View &#8594;</a>
+        </div>
 
-        <h3>Sample code:</h3>
-        <code>&lt;p&gt;Here is a link to &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; that will open a new tab.&lt;/p&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <p>Here is a link to <a class="in-text-link" href="https://www.google.com" target="_blank">Google</a> that will
-          open a new tab.</p>
+        <div class="project project1">
+          <h3>1. Nederlands Dans Theatre Microsite</h3>
+          <a href="ndt.html"><img class="clickable-img" src="img/ndtPreview.png"
+              alt="Nederlands Dans Theatre image of emotionally expressive dancers"></a>
+          <a class="in-text-link" href="ndt.html">View &#8594;</a>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Interactive Image</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selector:</h3>
-        <p>.clickable-img</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;a href="https://google.com" id="logo" target="_blank"&gt;&lt;img class="clickable-img example-img" src="img/laptopDaisy7094.jpg" alt="Daisy 7064 preview image of vibrant kaleidoscope"&gt;&lt;/a&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <a href="https://google.com" id="logo" target="_blank"><img class="clickable-img example-img"
-            src="img/laptopDaisy7094.jpg" alt="Daisy 7064 preview image of vibrant kaleidoscope"></a>
+    <section class="home-content" id="contact">
+      <h2>Let's Connect</h2>
+      <!-- HTML forms from: https://www.w3schools.com/css/tryit.asp?filename=trycss_forms -->
+      <!-- Form autocomplete from: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete -->
+      <div id="contact-form">
+        <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
+        <input type="submit" value="Submit">
+      </div>
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/kelvin-kwan-8906b1230" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kka27" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
     </section>
-  </section>
-  <!-- // INTERACTIVE ELEMENTS SECTION -->
+  </main>
 
+  <footer>
+    <a class="in-text-link" href="styleguide.html">Style Guide</a>
+    <a class="in-text-link" href="citation.html">Citations</a>
+    <a class="in-text-link" href="https://github.com/kka27/IAT339-P03" target="_blank">GitHub</a>
+  </footer>
 
-
-  <!-- TEXT ELEMENTS SECTION // -->
-  <section class="elem-section" id="text_elements">
-
-    <section>
-      <h2>Headings</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selectors:</h3>
-        <p>h1, h2, h3, h4</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;h1&gt;About me&lt;/h1&gt;</code>
-
-        <h3>Rendered element:</h3>
-
-        <h1>H1 - About me</h1>
-        <p>HK Grotesk Bold Regular</p>
-
-        <h2>H2 - Showcased work</h2>
-        <p>HK Grotesk Medium Regular</p>
-
-        <h3>H3 - Nederlands Dans Theatre</h3>
-        <p>HK Grotesk Medium Regular</p>
-
-        <h4>H4 - Click here to view my GitHub</h4>
-        <p>HK Grotesk Bold Regular</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Paragraphs</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selectors:</h3>
-        <p>p</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;p&gt;Daisy 7094 was our approach...&lt;/p&gt;</code>
-
-        <h3>Rendered element:</h3>
-
-        <p>Daisy 7094 was our approach to transforming one's everyday encounter with voice and conversation. Since
-          humans are social creatures, we have evolved to communicate complex feelings in subtle manners hidden in our
-          voice. Ultimately, Daisy 7094 celebrates the nuances of conversation into unique visual expressions of tone
-          and emotion.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Bulleted Lists</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selectors:</h3>
-        <p>custom-ul</p>
-
-        <h3>Rendered element:</h3>
-
-        <ul class="custom-ul">
-          <li>p5.js</li>
-          <li>BootStrap</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Numbered Lists</h2>
-
-      <div class="content-wrapper">
-        <h3>CSS selectors:</h3>
-        <p>custom-ol</p>
-
-        <h3>Rendered element:</h3>
-
-        <ol class="custom-ol">
-          <li>p5.js</li>
-          <li>BootStrap</li>
-          <li>Node.js</li>
-        </ol>
-      </div>
-    </section>
-
-  </section>
-  <!-- // TEXT ELEMENTS SECTION -->
-
-  <section class="elem-section" id="branding_elem">
-    <h2>Colour Palette</h2>
-
-    <div class="content-wrapper">
-      <img id="colour-palette" src="img/colourPalette.jpg" alt="Colour palette of black, beige, and warm orange">
-    </div>
-  </section>
-
+  <!-- for cursor effects -->
   <div class="cursor"><p class="click-text">Click</p></div>
 
+  <!-- JavaScript scripts -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <!-- Lenis scroll from: https://github.com/darkroomengineering/lenis -->
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
